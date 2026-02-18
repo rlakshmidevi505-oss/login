@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fetchData(callback){
+            console.log("fetching data");
+            callback();
+        }
+        function processData(){
+            console.log("processing data");
+        }
+        fetchData(processData);
+        const demo = () =>{
+            console.log("demo arrow function");
+        }
+        demo()
+        const lax= (a,b) =>a+b
+        console.log(lax(5,8));
+    </script>
+    
+</body>
+</html>
